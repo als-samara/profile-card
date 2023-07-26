@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+.container .card {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 350px;
+    background-color: #fff;
+    gap: 25px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.container .card .profile-informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.container .card .profile-informations img {
+    margin-top: 25px;
+    border-radius: 50%;
+}
+
+.container .card .profile-informations .age {
+    padding-left: 6px;
+}
+
+hr {
+    width: 100%;
+}
+
+.container .card .profile-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card .profile-numbers .info .counter,
+.card .profile-informations p {
+    font-weight: 700;
+}
+
+.card .profile-informations .age,
+.card .profile-informations .city,
+.card .profile-numbers .info .counter-type {
+    color: var(--text-color);
+}
+
+.card .profile-numbers .info .counter-type {
+    font-size: 16.5px;
+}
+
+li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--text-color);
+    margin-top: 10px;
+    height: 3px;
+    border-radius: 50%;
+    width: 0;
+    transition: all 350ms ease-in-out;
+}
+
+li:hover::after {
+    width: 100%;
+    right: 50%;
+}
